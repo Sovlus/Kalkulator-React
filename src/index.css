@@ -1,8 +1,8 @@
 :root {
-	--primary: #d81e5b;
+	--primary: #fac043;
 	--secondary: #8c38ff;
 	--dark: #131a26;
-	--light: #eee;
+	--light: #fff;
 }
 
 
@@ -14,7 +14,7 @@
 }
 
 body {
-	background-color: var(--light);
+	background-color: rgba(255, 255, 255, 0.76)
 }
 
 .App {
