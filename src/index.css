@@ -1,5 +1,5 @@
 :root {
-	--primary: #fac043;
+	--primary: #a7a7a7;
 	--secondary: #8c38ff;
 	--dark: #131a26;
 	--light: #fff;
@@ -82,4 +82,30 @@ button:hover {
 	flex: 1 1 33.333%;
 	max-width: 33.333%;
 	background-color: var(--dark);
+}
+
+.App {
+  animation: scroll 70s linear infinite;
+  background: url("https://static.vecteezy.com/system/resources/previews/001/907/694/non_2x/light-grey-background-free-photo.jpg"), #11111133;
+  color: rgb(189, 22, 22);
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .App {
+    animation: scroll 200s linear infinite;
+  }
 }
